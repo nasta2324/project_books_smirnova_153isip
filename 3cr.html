@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Светлая и тёмная тема</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Books.mir</title>
+</head>
+	<header>
+	<nav>
+		<div class="тык">
+	<a href="1cr.html">главная</a>
+	<a href="2cr.html">поиск</a>
+	<a href="3cr.html">о нас</a>
+  <div/>
+	</nav>
+	 <h1>Переключение темы</h1>
+    <button id="theme-toggle" aria-label="Переключить тему">Тёмная тема</button>
+	</header>
+	<main>
+		<div class="конт">
+		<img src="shedevr.png">
+<pre>
+Мы учитываем возрастные особенности:
+от легкой молодежи до серьезной классики.Каждое
+описание помогает понять, подойдет ли книга 
+именно вам.Используйте фильтры по возрасту и интересам.
+Наш справочник создан,чтобы чтение приносило удовольствие
+и новые знания независимо от вашего этапа жизни.
+</pre>
+</div>
+	</main>
+	<footer class="подвал">
+        <ul>
+        	<pre>
+<li>О проекте</li>      <li>Сотрудничество</li>  <li>Поддержка</li> 
+<li>контакты</li>       <li>Реклама</li>         <li>Пожаловаться</li>
+<li>правила</li>        <li>Я-автор</li>         <li>Тех. поддержка</li>
+<li>Мобильная версия</li>
+<li>Соц. сети</li>
+            </pre>
+		</ul>
+	</footer>
+<body>
+ <script src="script.js"></script>
+</body>
+</html>
