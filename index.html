@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Светлая и тёмная тема</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Books.mir</title>
+</head>
+<header>
+	<h1>Любимые книги</h1>
+    <button id="theme-toggle" aria-label="Переключить тему">Тёмная тема</button>
+<main>
+	<div class="тык">
+	<a href="index.html">Главная</a>
+	<a href="2cr.html">Поиск</a>
+	<a href="3cr.html">О нас</a>
+</div>
+<div class="поиск">
+	<form action="/search" method="get">  
+    <input type="text" name="query" placeholder="Что почитать..">  
+</form>  
+<div/>
+		<button>Все жанры</button> 
+		<button>Популярное</button>
+	<div class="тема1">
+<pre>
+На этой странице собраны книги, 
+которые любят читатели по всему миру. 
+</pre>
+</div>
+<div class="тема2">
+<pre>
+Здесь вы найдете как захватывающие истории для отдыха, 
+так и глубокие романы для размышлений.
+</pre>
+</div>
+</main>
+</header>
+   <div class="тык">
+	<a href="2cr.html">Дальше</a></div>
+	<footer>
+		
+	</footer>
+<body class="фон">
+  <script src="script.js"></script>
+</body>
+</html>
