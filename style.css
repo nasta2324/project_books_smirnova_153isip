@@ -210,7 +210,7 @@ main {
     z-index: -1;
     
  
-    background-image: url('/home/user/Рабочий стол/Смирнова_УП2 (2) (2)/projekt/sources/images/iiiii.png');
+    background-image: url('iiiii.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
